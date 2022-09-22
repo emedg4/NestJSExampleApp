@@ -1,0 +1,19 @@
+services:
+    tracking-cat-database:
+        container_name: tracking-cat-database
+        image: postgres:9.6.9
+        ports:
+            - "5432:5432"
+        volumes:
+             - ./data:/var/lib/postgresql/data
+        env_file:
+          - .env
+        networks:
+            - tracking-cat-network
+networks:
+    tracking-cat-network:
+        name: tracking-cat-network
+        driver: "bridge"
+volumes:
+    data:
+        driver: "local"

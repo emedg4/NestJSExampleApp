@@ -1,0 +1,64 @@
+#-----------------------------
+#  App settings
+#-----------------------------
+APP_PORT=3000
+APP_NAME=Tracking CAT
+
+#-----------------------------
+#  SSO Colaborador Digital
+#-----------------------------
+SSO_CD_HOST=https://whatsapp-dev.coppel.com:8443/ri/sso
+SSO_CD_PATH_LOGIN=/api/v2/login
+SSO_CD_PATH_VALIDATE=/api/v2/me
+SSO_CD_LOGIN_TYPE=10
+
+#-----------------------------
+#  SSO Aplicaciones
+#-----------------------------
+SSO_APP_HOST=https://whatsapp-dev.coppel.com:8443/ri/sso
+SSO_APP_PATH_LOGIN=/api/v1/app/authenticate
+SSO_APP_PATH_VALIDATE=/api/v1/app/me
+SSO_APP_APPID=f8be6cdf-e56d-4a0f-9392-c8dd1daca3b3
+SSO_APP_APPKEY=9a885bfd946f3cf7da85e7f9395cc352da9ac4e43392b2de1ae17ff21c9b7ff2
+
+#-----------------------------
+#  SOAP DETALLE EMPLEADO
+#-----------------------------
+SOAP_URL=https://whatsapp-dev.coppel.com:8443/ri/consulta-datos-empleados/connect/ConsultaDatosEmpleados?wsdl
+SOAP_NAMESPACE=e01
+
+#----------------------------
+#  Cache Options
+#----------------------------
+
+CACHE_LIFETIME=40000
+
+
+#----------------------------
+# Respuesta folio OK
+TRACKING_URL=https://whatsapp-dev.coppel.com:8443/ri/tracking-omnicanal
+
+DE_HOST=https://run.mocky.io
+DE_PATH=/v3/068dc9d6-84e2-4896-8215-7b8e4b8caf86
+
+#-----------------------------
+#  Development settings
+#-----------------------------
+PROD=false
+
+
+
+#-----------------------------
+#  Database settings
+#-----------------------------
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=postgres
+DB_PASSWORD=root
+DB_DATABASE=tracking_cat
+
+
+#-----------------------------
+#  Front-end settings
+#-----------------------------
+UI_PATH=
